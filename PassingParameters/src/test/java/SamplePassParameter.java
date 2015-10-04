@@ -24,7 +24,7 @@ public class SamplePassParameter extends BaseClass{
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 
         if (driver.getPageSource().contains("Sorry")){
-            System.out.println("Login Test with invalid user name and password is passed successfully.");
+            System.out.println("Login Test with invalid user_name and password is passed successfully.");
         }
 
     }
