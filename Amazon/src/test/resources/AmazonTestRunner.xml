@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon parallel test on Sauce Labs" parallel="tests" thread-count="5" >
+
+    <test name = "Amazon search function on Windows">
+        <classes>
+            <class name="SauceLabsParallelTest1" />
+        </classes>
+    </test>
+    <test name="Amazon search function on Mac">
+        <classes>
+            <class name="SauceLabsParallelTest2"/>
+        </classes>
+    </test>
+
+</suite>
