@@ -1,10 +1,10 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Metlife test on Sauce Labs with parameters" parallel="false" thread-count="5" >
+<suite name="Lg test on Sauce Labs with parameters" parallel="false" thread-count="5" >
     <parameter name="userName" value="ilhomdjalalov"/>
     <parameter name="key" value="69c5c864-6ffa-4d25-a0d7-5bd809ba72ec"/>
 
-    <test name = "Amazon search function on Windows">
+    <test name = "Lg login function on Windows">
         <classes>
             <class name="SamplePassParameter" />
         </classes>
