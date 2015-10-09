@@ -12,19 +12,22 @@ public class SamplePassParameter extends BaseClass{
 
     @Test
     public void chaseBank(){
-        driver.navigate().to("http://metlife.com");
+        driver.navigate().to("http://lg.com/us");
         System.out.println(driver.getCurrentUrl());
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement uName = driver.findElement(By.cssSelector("#uidLbl"));
-        uName.sendKeys("good_user");
-        WebElement pWord = driver.findElement(By.cssSelector("#pwdLbl"));
+        WebElement login = driver.findElement(By.xpath(".//*[@id='app-my-lg']/div/div/ul/li[1]/div/div/a/span"));
+        login.click();
+
+        WebElement uName = driver.findElement(By.xpath(".//*[@id='txtBoxEmail']"));
+        uName.sendKeys("good_user@fff.com");
+        WebElement pWord = driver.findElement(By.xpath(".//*[@id='txtBoxPassword']"));
         pWord.sendKeys("good_password");
-        driver.findElement(By.xpath(".//*[@id='108329']")).click();
+        driver.findElement(By.xpath(".//*[@id='signinForm']/div[3]/button")).click();
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 
-        if (driver.getPageSource().contains("Sorry")){
-            System.out.println("Login test with invalid username and password has passed successfully.");
+        if (driver.getPageSource().contains("incorrect")){
+            System.out.println("LOGIN test with invalid username and password has passed successfully.");
         }
 
     }
