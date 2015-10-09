@@ -24,7 +24,7 @@ public class BaseClass {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setBrowserName("firefox");
         caps.setCapability("platform", "Windows 10");
-        caps.setVersion("40.0");
+        caps.setVersion("41.0");
         caps.setCapability("name", "Passing Parameter Test");
 
         driver = new RemoteWebDriver(new URL(url),caps);

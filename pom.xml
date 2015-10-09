@@ -58,10 +58,15 @@
             </activation>
         </profile>
 
-        <profile><id>chaseApp</id>
+        <profile><id>amazonApp</id>
             <modules>
                 <module>Common</module>
                 <module>Amazon</module>
+            </modules>
+        </profile>
+        <profile><id>passingParameterApp</id>
+            <modules>
+                <module>Common</module>
                 <module>PassingParameters</module>
             </modules>
         </profile>
