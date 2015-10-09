@@ -29,7 +29,6 @@ public class SamplePassParameter extends BaseClass{
         if (driver.getPageSource().contains("incorrect")){
             System.out.println("LOGIN TEST WITH INVALID USERNAME AND PASSWORD HAS PASSED SUCCESSFULLY.");
             System.out.println("Auto trigger is on");
-            System.out.println("It's very difficult to configure auto-trigger.");
             System.out.println("I'm trying all posssible ways.");
 
         }
